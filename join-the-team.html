@@ -8,6 +8,7 @@
     <title>DMS - JOIN THE TEAM</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/toggle.css">
 </head>
 
 <body>
@@ -793,16 +794,16 @@
                         <span id="team">DMS COULD BE YOUR PLACE</span>
                     </div>
                     <h2 class="text-primary mb-5">Current job listings</h2>
-                    <h3>(DMS-West)</h3>
+                    <div class="btn-group btn-toggle mb-5"> 
+                        <button class="btn btn-lg btn-primary active">Portland, Oregon</button>
+                        <button class="btn btn-lg btn-default">Freedom, Pennsylvania</button>
+                      </div>
                 </div>
-                <div class="col-12 text-center">
+                <div class="col-12 text-center jobs">
                     <iframe src="https://teamdms.applicantpro.com/iframe/" frameborder="0"></iframe>
                 </div>
-                <div class="col-12 text-center">
 
-                <h3 class="text-primary mt-5 mb-2">(DMS-East)</h3>
-                    </div>
-                <div class="col-12 text-center">
+                <div class="col-12 text-center jobs hidden">
                     <iframe src="https://dmseast.applicantpro.com/iframe/" frameborder="0"></iframe>
                 </div>
             </div>
@@ -872,6 +873,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/toggle.js" defer></script>
     <script src="assets/js/bundle.js"></script>
     <script>
         $(function () {
