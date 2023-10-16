@@ -36,14 +36,14 @@ if (!empty($_POST)) {
         // specify SMTP credentials
         $mail->isSMTP();
 
-        $mail->Host = 'webcodegenie.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'work@webcodegenie.com';
-        $mail->Password = 'P48]z82AV@i8';
-        $mail->SMTPSecure = 'ssl';
+        $mail->Host = 'teamdms-com.mail.eo.outlook.com';
+        $mail->SMTPAuth = false;
+        $mail->Username = 'contactus@teamdms.com';
+        $mail->Password = '';
+        $mail->SMTPSecure = '';
         $mail->Port = 465;
-        $mail->setFrom("no-reply@webcodegenie.com", 'No Reply');
-        $mail->addAddress('nirmi@webcodegenie.com', 'Me');
+        $mail->setFrom("contactus@teamdms.com", 'Contact Us');
+        $mail->addAddress('contactus@teamdms.com', 'Me');
 
         
 
