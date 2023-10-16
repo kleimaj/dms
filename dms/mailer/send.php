@@ -40,10 +40,9 @@ if (!empty($_POST)) {
         $mail->SMTPAuth = false;
         $mail->Username = 'contactus@teamdms.com';
         $mail->Password = '';
-        $mail->SMTPSecure = '';
-        $mail->Port = 465;
-        $mail->setFrom("contactus@teamdms.com", 'Contact Us');
-        $mail->addAddress('contactus@teamdms.com', 'Me');
+        $mail->Port = 25;
+        $mail->setFrom("contactus@teamdms.com", 'Contact Us (DMS Website)');
+        $mail->addAddress('contactus@teamdms.com', 'Contact Us');
 
         
 
