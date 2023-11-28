@@ -38,8 +38,6 @@ if (!empty($_POST)) {
 
         $mail->Host = 'teamdms-com.mail.eo.outlook.com';
         $mail->SMTPAuth = false;
-        $mail->Username = 'contactus@teamdms.com';
-        $mail->Password = '';
         $mail->Port = 25;
         $mail->setFrom("contactus@teamdms.com", 'Contact Us (DMS Website)');
         $mail->addAddress('contactus@teamdms.com', 'Contact Us');
